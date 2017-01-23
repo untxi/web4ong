@@ -37,6 +37,7 @@ Text: font-family: 'Antic', sans-serif;
 
 body{
     background-color: var(--noMain-dark);
+    overflow: scroll;
 }
 header{
     background-color: var(--noMain-light);
@@ -130,15 +131,18 @@ ul.topnav li.icon {
   }
 }
 
-
+main{
+    margin-bottom: 20px;
+}
 articles{
     float: left;
+    overflow-y: scroll;
 }
 aside{
     vertical-align: top;
     float: right;
 }
-p{
+p, dd{
     font-family: 'Antic', sans-serif;
 }
 h1,h2,h3,h4,h5{
@@ -151,31 +155,31 @@ a{text-decoration: none;}
     font-family: 'Carter One', cursive;
 }
 footer{
-    margin:0 auto;
+    width: 100%;
+    margin-top: 20px;
     clear: left;
     background: var(--bg-light);
     min-height: 60px;
     padding: 2px;
     text-align: center;
     vertical-align: middle;
-    position:fixed;
     height:50px;
     bottom:0px;
     left:0px;
     right:0px;
-    margin-bottom:0px;
 }
 footer p{
     margin-left: 5px;
     vertical-align: center;
     float: left;
 }
+
 .social{
     margin-top: -3px;
     height: 50px;
 }
 
-.block-container{
+.block-container, .about-container{
     align-content: center;
     text-align: center;
 }
@@ -188,7 +192,67 @@ footer p{
     width: 90%;
 }
 
-.btn {
+.about-container{
+    margin-left: 10%;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    min-height: 70%;
+}
+.about{
+    min-height: 80%;
+    background-size: 100%;
+    background-image: linear-gradient(to right, black 0%,white 140%), url("../img/grupo.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode:screen;
+    margin-bottom: 10px;
+}
+
+.about-block{
+    margin-left: 8%;
+    min-height: 200px;
+}
+.about-val{
+    margin-top: 20px;
+    margin-left: 27%;
+    min-height: 200px;
+    margin-bottom: 50px;
+}
+.about-val,.about-block {
+    float: left;
+    background: var(--lines);
+    border-radius:100px;
+}
+.about-val h4,.about-block h4{
+    font-size: 20px;
+}
+.about-val p,.about-block p{
+    padding: 10px;
+    font-size-adjust: auto;
+    font-size: 15px;
+}
+
+.equipo{
+    overflow-y: scroll;
+}
+.equipo section{
+    text-align: center;
+    align-content: center;
+}
+.equipo img{
+    position: absolute;
+    text-align: center;
+    border-radius: 191px 191px 191px 191px;
+    width: 50%;
+}
+.equipo button{
+    position: relative;
+    width: 20%;
+    margin-left: %;
+    margin-top: -20%;
+}
+
+.btn, .equipo button{
   background: #FFFFF0;
   background-image: -webkit-linear-gradient(top, #FFFFF0, #DBC1B4);
   background-image: -moz-linear-gradient(top, #FFFFF0, #DBC1B4);
@@ -204,7 +268,7 @@ footer p{
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
-.btn:hover {
+.btn:hover, .equipo button:hover{
   background: #BACFD9;
   background-image: -webkit-linear-gradient(top, #BACFD9, #DBC1B4);
   background-image: -moz-linear-gradient(top, #BACFD9, #DBC1B4);
@@ -212,4 +276,7 @@ footer p{
   background-image: -o-linear-gradient(top, #BACFD9, #DBC1B4);
   background-image: linear-gradient(to bottom, #BACFD9, #DBC1B4);
   text-decoration: none;
+}
+.block img{
+    position: relative;
 }
