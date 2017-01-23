@@ -68,15 +68,23 @@ ul.topnav {
 }
 ul.topnav li {float: left;}
 ul.topnav li a {
-  display: inline-block;
-  color: var(--titles);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
+    display: inline-block;
+    color: var(--titles);
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
+#activo a{
+    background-color: var(--noMain-light);
+    color: var(--company);
+    margin-left: 3px;
+    margin-top: 5px;
+}
 ul.topnav li a:hover {background-color: var(--lines);}
 ul.topnav li.icon {display: none;}
 @media screen and (max-width:680px) {
