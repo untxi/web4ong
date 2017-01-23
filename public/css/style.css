@@ -88,11 +88,11 @@ ul.topnav li a {
 ul.topnav li a:hover {background-color: var(--lines);}
 ul.topnav li.icon {display: none;}
 @media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
+    ul.topnav li {display: none;}
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
 }
 @media screen and (max-width:680px) {
   ul.topnav.responsive {position: relative;}
