@@ -23,3 +23,5 @@ Forma de Entrega:
 ZIP en el TEC-Digital, siguiendo formato de otras entregas. Nota: incluir en el txt, las credenciales del usuario administrador general y al menos un usuario específico
 
 Sitio publicado en el servidor web de la Escuela (no se aceptarán otros dominios)
+
+<a href="https://icons8.com/web-app/13912/Facebook">Facebook and other icons by Icons8</a> 
