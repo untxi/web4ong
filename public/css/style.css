@@ -59,17 +59,15 @@ header h2{
 	padding:5px;
     background-color: var(--bg-light);
 }
-.menu-container nav{
-    float: left;
-    
-}
+.menu-container nav{float: left;}
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-ul.topnav li {float: left;
+ul.topnav li {
+    float: left;
     background: var(--bg-dark);
 }
 ul.topnav li a {
@@ -131,9 +129,6 @@ ul.topnav li.icon {
   }
 }
 
-main{
-    margin-bottom: 20px;
-}
 articles{
     float: left;
     overflow-y: scroll;
@@ -142,10 +137,10 @@ aside{
     vertical-align: top;
     float: right;
 }
-p, dd{
+p, dd, fieldset{
     font-family: 'Antic', sans-serif;
 }
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5, legend{
     font-family: 'Alegreya Sans SC', sans-serif;
     color: var(--titles);
 }
@@ -207,7 +202,6 @@ footer p{
     background-blend-mode:screen;
     margin-bottom: 10px;
 }
-
 .about-block{
     margin-left: 8%;
     min-height: 200px;
@@ -223,18 +217,14 @@ footer p{
     background: var(--lines);
     border-radius:100px;
 }
-.about-val h4,.about-block h4{
-    font-size: 20px;
-}
+.about-val h4,.about-block h4{font-size: 20px;}
 .about-val p,.about-block p{
     padding: 10px;
     font-size-adjust: auto;
     font-size: 15px;
 }
 
-.equipo{
-    overflow-y: scroll;
-}
+.equipo{overflow-y: scroll;}
 .equipo section{
     text-align: center;
     align-content: center;
@@ -251,6 +241,29 @@ footer p{
     margin-left: %;
     margin-top: -20%;
 }
+
+.unete fieldset{
+    background: var(--noMain-light);
+    margin-left:25%;
+}
+.unete form label{
+    width: 20%;
+    margin-bottom: 10px;
+}
+.unete form textarea{
+    height: 100px;
+}
+.myIn{
+    margin-left: 25%;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.unete .btn{
+    width: 50%;
+    margin-left: 25%;
+}
+
 
 .btn, .equipo button{
   background: #FFFFF0;

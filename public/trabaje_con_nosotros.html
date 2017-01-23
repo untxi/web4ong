@@ -26,28 +26,40 @@
 	</header>
 	<main>
 		<article>
-			<section>
-				<h3>Trabaje con Nosotros</h3>
-				<form>
+			<section class="col-12 unete">
+				<form class="col-6">
 					<fieldset>
-						<legend>Si lo Prefiere</legend>
-							<label for="name">Nombre</label>
-							<input id="nombre" name="nombre"type= "text"/>
-							<br>
-							<label for="mail">Correo</label>
-							<input id="mail" name="mail" type="email"/>
-							<br>
-							<label for="num_tel">Num Teléfono</label>
-							<input id="num_tel" name="num_tel" type="text"/>
-							<br/>
-							<label for="Motivación">Motivación</label>
-							<textarea id="motivacion" name="motivacion" type="text"></textarea>
-							<br>
-							<label for="grupos">Grupos de Interés</label>
-							<br/>
-							<input id="grupo1" name="grupo1" type= "checkbox"/><label>Grupo 1</label>
-							<br>
-							<input type="submit" name="b_submit" value="Enviar" />
+						<legend><h2>Trabaje con Nosotros</h2></legend>
+						<label class="myLabel" for="name">Nombre</label>
+						<input  class="myIn" id="nombre" name="nombre"type= "text"/>
+						<br>
+						<label class="myLabel" for="mail">Correo</label>
+						<input class="myIn" id="mail" name="mail" type="email"/>
+						<br>
+						<label class="myLabel" for="num_tel">Num Teléfono</label>
+						<input class="myIn" id="num_tel" name="num_tel" type="text"/>
+						<br/>
+						<label class="myLabel" for="Motivación">Motivación</label>
+						<textarea class="myIn" id="motivacion" name="motivacion" type="text" maxlength="500"></textarea>
+						<br>
+						<dl class="myLabel">Grupos de Interés
+							<dd>
+								<input id="grupo1" name="grupo1" type= "checkbox"/>
+								<label class="myLabel">Grupo 1</label>
+							</dd><dd>
+								<input id="grupo1" name="grupo1" type= "checkbox"/>
+								<label class="myLabel">Grupo 2</label>
+							</dd><dd>
+								<input id="grupo1" name="grupo1" type= "checkbox"/>
+								<label class="myLabel">Grupo 3</label>
+							</dd><dd>
+								<input id="grupo1" name="grupo1" type= "checkbox"/>
+								<label class="myLabel">Disposición a cualquiera de nuestros grupos</label>
+							</dd>
+						</dl>
+						
+						<br>
+						<input class="btn" type="submit" name="b_submit" value="Enviar" />
 					</fieldset>
 				</form>
 			</section>
