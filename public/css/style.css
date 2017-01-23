@@ -72,7 +72,6 @@ ul.topnav li a {
     color: var(--titles);
     text-align: center;
     padding: 5px 16px;
-    text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
     margin-left: 10px;
@@ -126,19 +125,25 @@ h1,h2,h3,h4,h5{
     font-family: 'Alegreya Sans SC', sans-serif;
     color: var(--titles);
 }
+a{text-decoration: none;}
 .coName{
     color: var(--company);
     font-family: 'Carter One', cursive;
 }
 footer{
-    margin-top: 10px;
+    margin:0 auto;
+    clear: left;
     background: var(--bg-light);
+    min-height: 60px;
     padding: 2px;
     text-align: center;
     vertical-align: middle;
-    clear: left;
-    display: block;
-    min-height: 60px;
+    position:fixed;
+    height:50px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
 }
 footer p{
     margin-left: 5px;
@@ -147,11 +152,21 @@ footer p{
 }
 .social{
     margin-top: -3px;
-    text-decoration: none;
     height: 50px;
 }
 
-.block{}
+.block-container{
+    align-content: center;
+    text-align: center;
+}
+.block{
+    float: left;
+    margin: 15px 0;
+}
+.block img{
+    padding: 5px;
+    width: 90%;
+}
 
 .btn {
   background: #FFFFF0;
