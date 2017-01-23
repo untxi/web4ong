@@ -56,17 +56,21 @@ header h2{
 
 .menu-container{
 	padding:5px;
-	background:var(--bg-light);
+    background-color: var(--bg-light);
 }
-.menu-container nav{float: left;}
+.menu-container nav{
+    float: left;
+    
+}
 ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: var(--bg-dark);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-ul.topnav li {float: left;}
+ul.topnav li {float: left;
+    background: var(--bg-dark);
+}
 ul.topnav li a {
     display: inline-block;
     color: var(--titles);
@@ -79,22 +83,38 @@ ul.topnav li a {
 }
 
 #activo a{
-    background-color: var(--noMain-light);
     color: var(--company);
     margin-left: 3px;
     margin-top: 5px;
+    background: var(--bg-light);
 }
 ul.topnav li a:hover {background-color: var(--lines);}
-ul.topnav li.icon {display: none;}
+ul.topnav li.icon {
+    display: none;
+    background-color:var(--bg-dark);
+    font-weight: bolder;
+}
 @media screen and (max-width:680px) {
     ul.topnav li {display: none;}
     ul.topnav li.icon {
         float: right;
         display: inline-block;
     }
+    ul.topnav{
+        background-color: var(--bg-dark);
+    }
+    #activo a{
+        background-color: var(--bg-light);
+    }
 }
 @media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive {
+      position: relative;
+      background: var(--bg-dark);
+    }
+    #activo a{
+        background-color: var(--bg-light);
+    }
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
