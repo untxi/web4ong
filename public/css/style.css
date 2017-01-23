@@ -119,30 +119,37 @@ aside{
     vertical-align: top;
     float: right;
 }
-p{}
-h1,h2,h3,h4,h5{}
+p{
+    font-family: 'Antic', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: var(--titles);
+}
 .coName{
     color: var(--company);
     font-family: 'Carter One', cursive;
 }
 footer{
     margin-top: 10px;
+    background: var(--bg-light);
     padding: 2px;
     text-align: center;
-    background: #CCB65E;
+    vertical-align: middle;
     clear: left;
     display: block;
+    min-height: 60px;
 }
-.social{}
-.facebook{}
-.instagram{}
-.plus{}
-.pinterest{}
-.snapchat{}
-.twitter{}
-.wordpress{}
-.youtube{}
-
+footer p{
+    margin-left: 5px;
+    vertical-align: center;
+    float: left;
+}
+.social{
+    margin-top: -3px;
+    text-decoration: none;
+    height: 50px;
+}
 
 .block{}
 
