@@ -1,0 +1,1 @@
+lista de ids, luego ver la posicion del elemento seleccionado, crear la cookie en js con el id que se quiere consultar, luego el php de ver proyecto debe hacer un select, leyendo la cookie creado en js
