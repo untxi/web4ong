@@ -26,7 +26,10 @@ function agregar_actividad(){
     var doc= document.createElement("INPUT");
     doc.type="file";
     doc.name="act_doc"+num;
-    //alert (num);
+    var img= document.createElement("INPUT");
+    img.type="file";
+    img.name="act_img"+num;
+    alert (num);
     var br= document.createElement("BR");
     input.id="act"+num;
     label.innerHTML="Nombre";
@@ -48,6 +51,11 @@ function agregar_actividad(){
     input.appendChild(label);
     input.innerHTML+="<br>";
     input.appendChild(doc);
+    input.innerHTML+="<br>";
+    label.innerHTML="Imagen";
+    input.appendChild(label);
+    input.innerHTML+="<br>";
+    input.appendChild(img);
     input.innerHTML+="<br>";
     bloque.appendChild(input);
     bloque.appendChild(br);  
