@@ -15,16 +15,20 @@
 	<main>
 		<articles>
 			<section>
-				<form>
+				<form action="php/upload_form.php" method="post" enctype="multipart/form-data">
 					<fieldset>
 						<legend>Información Necesaria</legend>
+						<label for="nombre">Nombre</label>
+							<br>
+							<input id="nombre" name="nombre" type="text">
+							<br>
 							<label for="resumen">Resumen</label>
 							<br>
-							<input id="nombre" name="nombre"type="text">
+							<input id="resumen" name="resumen" type="text">
 							<br>
 							<label for="Objetivos">Objetivos</label>
 							<div id="objetivos">
-								<input id="obj1" name="obj1"type="text">
+								<input id="obj1" name="obj1" type="text">
 								<br>
 							</div>
 							<span class="btn" onclick="agregar_objetivo();">Agregar Objetivo</span><br>
@@ -38,7 +42,7 @@
 									<br>
 									<label>Fecha</label>
 									<br>
-									<input id="act_fecha1" name="act_fecha1" type= "date">
+									<input id="act_fecha1" name="act_fecha1" type= "text">
 									<br>
 									<label>Lugar</label> <br>
 									<input id="act_lug1" name="act_lug1" type= "text">
