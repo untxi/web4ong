@@ -1,0 +1,294 @@
+/* 
+Fonts
+ONG Name: font-family: 'Carter One', cursive;
+Titles: font-family: 'Alegreya Sans SC', sans-serif;
+Text: font-family: 'Antic', sans-serif;
+*/
+/* For desktop: */
+.col-1 {width: 8%;}
+.col-2 {width: 16%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33%;}
+.col-5 {width: 41%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58%;}
+.col-8 {width: 66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83%;}
+.col-11 {width: 91%;}
+.col-12 {width: 100%}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        
+    }
+}
+:root{
+    --company:#085180;
+    --bg-dark: #fff6c2;
+    --bg-light: white;
+    --lines: #BACFD9;
+    --noMain-dark: #E6E7E9;
+    --noMain-light: ivory;
+    --roseGray: #DBC1B4;
+    --titles: #dc7b14;
+}
+
+body{
+    background-color: var(--noMain-dark);
+    overflow: scroll;
+}
+header{
+    background-color: var(--noMain-light);
+    min-height: 90px;
+    height: auto;
+    vertical-align: middle;
+    border-bottom: 2px solid #BACFD9;
+}
+header h2{
+    height: auto;
+    text-align: center;
+    font-size: 100%;
+    vertical-align: middle;
+    float: left;
+    margin-right: 10%;
+}
+
+.menu-container{
+	padding:5px;
+    background-color: var(--bg-light);
+}
+.menu-container nav{float: left;}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.topnav li {
+    float: left;
+    background: var(--bg-dark);
+}
+ul.topnav li a {
+    display: inline-block;
+    color: var(--titles);
+    text-align: center;
+    padding: 5px 16px;
+    transition: 0.3s;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#activo a{
+    color: var(--company);
+    margin-left: 3px;
+    margin-top: 5px;
+    background: var(--bg-light);
+}
+ul.topnav li a:hover {background-color: var(--lines);}
+ul.topnav li.icon {
+    display: none;
+    background-color:var(--bg-dark);
+    font-weight: bolder;
+}
+@media screen and (max-width:680px) {
+    ul.topnav li {display: none;}
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+    ul.topnav{
+        background-color: var(--bg-dark);
+    }
+    #activo a{
+        background-color: var(--bg-light);
+    }
+}
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {
+      position: relative;
+      background: var(--bg-dark);
+    }
+    #activo a{
+        background-color: var(--bg-light);
+    }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+articles{
+    float: left;
+    overflow-y: scroll;
+}
+aside{
+    vertical-align: top;
+    float: right;
+}
+p, dd, fieldset, button, table{
+    font-family: 'Antic', sans-serif;
+}
+h1,h2,h3,h4,h5, legend{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: var(--titles);
+}
+a{text-decoration: none;}
+.coName{
+    color: var(--company);
+    font-family: 'Carter One', cursive;
+}
+footer{
+    width: 100%;
+    margin-top: 20px;
+    clear: left;
+    background: var(--bg-light);
+    min-height: 60px;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    height:50px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+footer p{
+    margin-left: 5px;
+    vertical-align: center;
+    float: left;
+}
+
+.social{
+    margin-top: -3px;
+    height: 50px;
+}
+
+.block-container, .about-container{
+    align-content: center;
+    text-align: center;
+}
+.block{
+    float: left;
+    margin: 15px 0;
+}
+.block img{
+    padding: 5px;
+    width: 90%;
+}
+.block img{
+    position: relative;
+}
+
+.about-container{
+    margin-left: 10%;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    min-height: 70%;
+}
+.about{
+    min-height: 80%;
+    background-size: 100%;
+    background-image: linear-gradient(to right, black 0%,white 140%), url("../img/grupo.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode:screen;
+    margin-bottom: 10px;
+}
+.about-block{
+    margin-left: 8%;
+    min-height: 200px;
+}
+.about-val{
+    margin-top: 20px;
+    margin-left: 27%;
+    min-height: 200px;
+    margin-bottom: 50px;
+}
+.about-val,.about-block {
+    float: left;
+    background: var(--lines);
+    border-radius:100px;
+}
+.about-val h4,.about-block h4{font-size: 20px;}
+.about-val p,.about-block p{
+    padding: 10px;
+    font-size-adjust: auto;
+    font-size: 15px;
+}
+
+.equipo{overflow-y: scroll;margin-left: 10%;}
+.equipo section{
+    text-align: center;
+    align-content: center;
+}
+.equipo img{
+    text-align: center;
+    border-radius: 191px 191px 191px 191px;
+    width: 100px;
+}
+
+.unete{
+    margin-left:25%;
+}
+.unete fieldset{
+    background: var(--noMain-light);
+    margin-left:10%;
+}
+.unete form label{
+    width: 20%;
+    margin-bottom: 10px;
+}
+.unete form textarea{
+    height: 100px;
+}
+.myIn{
+    margin-left: 25%;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.unete .btn{
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+.btn-equipo{
+    margin-top: 5px;
+}
+.btn, .btn-equipo, .equipo table tr td button{
+  min-width: 50px;
+  background: #FFFFF0;
+  background-image: -webkit-linear-gradient(top, #FFFFF0, #DBC1B4);
+  background-image: -moz-linear-gradient(top, #FFFFF0, #DBC1B4);
+  background-image: -ms-linear-gradient(top, #FFFFF0, #DBC1B4);
+  background-image: -o-linear-gradient(top, #FFFFF0, #DBC1B4);
+  background-image: linear-gradient(to bottom, #FFFFF0, #DBC1B4);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  color: #838E74;
+  font-size: 15px;
+  padding: 5px 2px;
+  text-decoration: none;
+}
+.btn:hover, .btn-equipo:hover, .equipo table tr td button:hover{
+  background: #BACFD9;
+  background-image: -webkit-linear-gradient(top, #BACFD9, #DBC1B4);
+  background-image: -moz-linear-gradient(top, #BACFD9, #DBC1B4);
+  background-image: -ms-linear-gradient(top, #BACFD9, #DBC1B4);
+  background-image: -o-linear-gradient(top, #BACFD9, #DBC1B4);
+  background-image: linear-gradient(to bottom, #BACFD9, #DBC1B4);
+  text-decoration: none;
+}
+
