@@ -1,0 +1,54 @@
+function agregar_objetivo(){
+    var bloque= document.getElementById("objetivos");
+    var input = document.createElement("INPUT");
+    var num= Math.floor((bloque.childNodes.length)/2);
+    //alert (num);
+    var br= document.createElement("BR");
+    input.type="text";
+    input.name="obj"+num;
+    bloque.appendChild(input);
+    bloque.appendChild(br);  
+}
+function agregar_actividad(){
+    var bloque= document.getElementById("actividades");
+    var input = document.createElement("DIV");
+    var num= Math.floor((bloque.childNodes.length)/2);
+    var nombre= document.createElement("INPUT");
+    var label= document.createElement("LABEL");
+    nombre.type="text";
+    nombre.name="act_nom"+num;
+    var fecha= document.createElement("INPUT");
+    fecha.type="date";
+    fecha.name="act_fecha"+num;
+    var lugar= document.createElement("INPUT");
+    lugar.type="text";
+    lugar.name="act_lug"+num;
+    var doc= document.createElement("INPUT");
+    doc.type="file";
+    doc.name="act_doc"+num;
+    //alert (num);
+    var br= document.createElement("BR");
+    input.id="act"+num;
+    label.innerHTML="Nombre";
+    input.appendChild(label);
+    input.innerHTML+="<br>";
+    input.appendChild(nombre);
+    input.innerHTML+="<br>";
+    label.innerHTML="Fecha";
+    input.appendChild(label);
+    input.innerHTML+="<br>";
+    input.appendChild(fecha);
+    input.innerHTML+="<br>";
+    label.innerHTML="Lugar";
+    input.appendChild(label);
+    input.innerHTML+="<br>";
+    input.appendChild(lugar);
+    input.innerHTML+="<br>";
+    label.innerHTML="Documento";
+    input.appendChild(label);
+    input.innerHTML+="<br>";
+    input.appendChild(doc);
+    input.innerHTML+="<br>";
+    bloque.appendChild(input);
+    bloque.appendChild(br);  
+}
