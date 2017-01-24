@@ -1,6 +1,6 @@
 <?php
-//$servername = "mississippi.ic-itcr.ac.cr";
-/*$username = "ealvarez";
+/*$servername = "mississippi.ic-itcr.ac.cr";
+$username = "ealvarez";
 $password = "ealvarez";*/
 $servername = "localhost";
 $username = "root";
@@ -12,5 +12,7 @@ $conn= new mysqli($servername,$username,$password,$BD);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
+}else{
+	echo "conectada a DB ealvarez";
 }
 ?>
