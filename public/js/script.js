@@ -1,4 +1,8 @@
-//document.getElementById("respNav").addEventListener("click",nav);
+document.getElementById("btnVerGrupo").addEventListener("click", verGrupo);
+function verGrupo(){
+    window.open("equipo.html","",'top=50,left=300,width=600,height=600');
+}
+
 function nav() {
     var x = document.getElementById("myTopnav");
     if (x.className === "col-12 topnav") {
