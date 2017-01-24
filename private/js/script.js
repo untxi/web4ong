@@ -13,3 +13,13 @@ function nav() {
         document.getElementById("blockAbout").style.marginTop="30%";
     }
  }
+
+document.getElementById("newGrupo").addEventListener("click", addGrupo);
+function addGrupo(){
+    window.open("crear_grupos.html","",'top=50,left=300,width=600,height=600');
+}
+
+document.getElementById("enviarGrupo").addEventListener("click", sendGrupo);
+function sendGrupo(){
+    window.close();
+}

@@ -131,7 +131,6 @@ ul.topnav li.icon {
 
 articles{
     float: left;
-    overflow-y: scroll;
 }
 aside{
     vertical-align: top;
@@ -238,8 +237,7 @@ footer p{
     width: 100px;
 }
 
-.unete{
-    margin-left:25%;
+.unete{    
 }
 .unete fieldset{
     background: var(--noMain-light);
@@ -247,6 +245,9 @@ footer p{
 }
 .unete form label{
     width: 20%;
+    margin-bottom: 10px;
+}
+.unete input{
     margin-bottom: 10px;
 }
 .unete form textarea{
@@ -260,6 +261,8 @@ footer p{
 .unete .btn{
     width: 50%;
     margin-left: 25%;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 
 

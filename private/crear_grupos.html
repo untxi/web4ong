@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+   <!--Style-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Antic|Carter+One" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript" src="js/script.js">
+</script>
 	<title>Crear Nuevos Grupos</title>
 </head>
 <body>
@@ -14,8 +18,8 @@
 	</nav>
 	<main>
 		<articles>
-			<section>
-				<form action="php/upload_form.php" method="post" enctype="multipart/form-data">
+			<section class="col-12 unete">
+				<form class="col-12" action="php/upload_form.php" method="post" enctype="multipart/form-data">
 					<fieldset>
 						<legend>Información Necesaria</legend>
 						<label for="nombre">Nombre</label>
@@ -31,7 +35,7 @@
 								<input id="obj1" name="obj1" type="text">
 								<br>
 							</div>
-							<span class="btn" onclick="agregar_objetivo();">Agregar Objetivo</span><br>
+							<span class="btn" onclick="agregar_objetivo();">Agregar Objetivo</span><br><br>
 							<label for="Actividades">Actividades:</label>
 							<br>
 							<div id="actividades">
@@ -60,17 +64,28 @@
 							</div>
 							<span class="btn" onclick="agregar_actividad();">Agregar Actividad</span><br>
 							<br>
-							<input id="" name="b_submit" type= "submit" value="Enviar">
+							<input class="btn" id="enviarGrupo" onclick="sendGrupo()" name="b_submit" type= "submit" value="Enviar">
 							<br>
 					</fieldset>
 				</form>
 			</section>
 		</article>
 	</main>
-	<asides>
-	</asides>
 	<footer>
+        <p>Contacto en Redes Sociales</p>
+        <div>
+	    <a class="social" href=""><img src="ico/Facebook.png" alt="Facebook"></a>
+        <a class="social" href=""><img src="ico/Twitter.png" alt="Twitter"></a>
+        <a class="social" href=""><img src="ico/Instagram.png" alt="Instagram"></a>
+        <a class="social" href=""><img src="ico/Plus.png" alt="Google+"></a>
+        <a class="social" href=""><img src="ico/Pinterest.png" alt="Pinterest"></a>
+        <a class="social" href=""><img src="ico/Snapchat.png" alt=""></a>
+        <a class="social" href=""><img src="ico/YouTube.png" alt="Youtube"></a>
+        <a class="social" href=""><img src="ico/WordPress.png" alt="WordPress"></a>
+        </div>
 	</footer>
 </body>
 <script type="text/javascript" src="js/grupos.js"></script>
+<script type="text/javascript" src="js/script.js">
+</script>
 </html>
