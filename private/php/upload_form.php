@@ -10,7 +10,7 @@ $sql = "INSERT INTO Grupo(nombre_grupo, resumen_grupo) VALUES ('$nombre','$resum
 	} else {
 		echo "Error: " . $sql . "<br>" . $conn->error;
 	}
-$sql3="SELECT id_grupo FROM Grupo WHERE nombre_grupo = '$nombre'";
+$sql3="SELECT id_grupo FROM Grupo WHERE nombre_grupo = '$nombre' ORDER BY id_grupo ASC";
 $result=$conn->query($sql3);
 $id=0;
 if ($result->num_rows>0){
@@ -31,8 +31,8 @@ foreach($_POST as $x => $x_value){
     }
 }
 $num_act=0;
-foreach($_POST as $x > $x_value){
-    if (strpos($x, 'act_nom') !== false) {
+foreach($_POST as $y => $y_value){
+    if (strpos($y, 'act_nom') !== false) {
         $num_act+=1;
     }
 }
@@ -56,11 +56,12 @@ while ($num_aux<=$num_act){
 	$img_act=$_FILES["act_img".$num_aux] ;
 	move_uploaded_file($img_act["tmp_name"],$target_dir.$img_act["name"]);
     $path2=$target_dir.$img_act["name"];
-	$sql_aux = "INSERT INTO Actividad (id_grupo, nombre_actividad, fecha_actividad, lugar_actividad, doc_actividad, imagen_actividad) VALUES ('$nombre_act','$fecha_act','$lugar_act','$path1','$path2')";
+	$sql_aux = "INSERT INTO Actividad (id_grupo, nombre_actividad, fecha_actividad, lugar_actividad, doc_actividad, imagen_actividad) VALUES ('$id','$nombre_act','$fecha_act','$lugar_act','$path1','$path2')";
         if ($conn->query($sql_aux) == TRUE) {
 		echo "New record created successfully";
 	   } else {
 		echo "Error: " . $sql_aux . "<br>" . $conn->error;
 	   }
+	$num_aux+=1;
 }
 ?>
